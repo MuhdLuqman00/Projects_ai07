@@ -13,6 +13,7 @@ It is then split for train-validation-test at a ratio of 60:20:20
 ### Model Summary & Training 
 The simple Neural Network below is made for classification problem. 
 
+![model](images/Model Summary.PNG)
 
 Batch size of 32 and epoch of 100 is used to train the model. Early stopping is applied during the training to prevent overfitting. L2 regularization and dropout layers are also implemented to counter the overfitting of the model. The training stopped at epoch 66 with the train_accuracy and validation_accuracy of 96% and 93% respectively. Training graph is shown below 
   
