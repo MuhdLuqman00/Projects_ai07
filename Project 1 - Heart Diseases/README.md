@@ -3,7 +3,7 @@
 ## 1. Summary
 The objective of this project is to predict whether a patient have a heart disease or not.
 
-## 3. Approach 
+## 2. Approach 
 ### Dataset 
 Data link: https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset.
 
@@ -23,6 +23,6 @@ Batch size of 32 and epoch of 100 is used to train the model. Early stopping is 
 ![loss graph](images/Loss.PNG)
 
 
-## 4. Results
+## 3. Results
 ![test result](images/test_result.PNG)
 
