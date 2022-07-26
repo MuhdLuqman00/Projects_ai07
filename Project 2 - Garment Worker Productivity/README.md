@@ -13,3 +13,12 @@ It is then split into train-validation-test set at the ratio of 60:20:20
 
 ## Model Summary
 
+![Model](Images/Model.PNG)
+
+## Training 
+
+![MAE](Images/MAE.png)
+
+![Loss](Images/Loss.png)
+
+## Result 
