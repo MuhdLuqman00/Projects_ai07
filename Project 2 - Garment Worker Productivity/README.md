@@ -26,4 +26,6 @@ Training with a batch size of 32 and epochs of 100 is done. Training Loss and MA
 ## Result 
 
 It can be seen that this model is not really the best model to achieve the objective. Another method that can be used to attain the objective is by using classification. This said method can be achieved my transforming the Labels into multiple categories and change the model accordingly. 
+
+
 ![pred](Images/prediction.png)
