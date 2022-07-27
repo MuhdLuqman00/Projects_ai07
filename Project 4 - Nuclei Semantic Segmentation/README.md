@@ -1,4 +1,4 @@
-# Nuclei Image Segmentation
+# Nuclei Image Segmentation (U-Net)
 
 ## Summary 
 
@@ -8,13 +8,29 @@ Creating a semantic segmentation model that detects nuclei in images
 
 Link: [Nuclei Semantic Segmentation Dataset](https://www.kaggle.com/competitions/data-science-bowl-2018/overview)
 
-1. Loading Train dataset (Images and Masks) and Test Dataset (Images and Masks)
+Dataset are loaded and undergoes preprocessing before it can be applied in the U-net semantic segmentation model. preprocessing have the following order.
+
+1. **Images Dataset** --> **Numpy Arrays** --> **Normalization** --> **Tensor** --> **Prefetch**
+
+2. **Masks Dataset** --> **Numpy Arrays** --> **Dimension Expansion** --> **Mask Labels** --> **Tensor** --> **Prefetch**
+
+
+Below are some examples of images and masks dataset
+
+![Train images sample](images/)
+![Train masks sample](images/)
+![Test images sample](images/)
+![Test masks sample](images/)
+
+## Before Model Training
+
+As you can see from the image below, the model did not do a very good job in predicting the masks of the images 
 
 ![Train images sample](images/)
 
-2. Change the data type to Numpy arrays 
-3. Expanding the dimension of Masks (train and test) to match with the dimension of the images's (train and test) dimension
-4. Convert Masks Values into labels of [0. 1.]
-5. Normalize image pixel values 
-6. Combine Image and Masks in categories of Train and Test dataset
-7. Build Input Dataset
+## After Model Training
+
+The model was trained for 19 epoch which resulted in the accuracy of 96.96%  with the loss of 7.45 percent
+
+![Train images sample](images/)
+
