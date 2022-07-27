@@ -19,14 +19,15 @@ Dataset: [Concrete Image Dataset](https://data.mendeley.com/datasets/5y9wdsg2zt/
 Model Architecture of Mobile_netV2 was used for this project by using transfer learning
 Classificaton Layer was created as below. Activation function of Sigmoid was used in the output layer. 
 
-![Classification layers]()
+![Classification layers](images/classification_model.PNG)
 
 below shows the accuracy and loss of the model before training. 
 
-![before_training]()
+![before_training](images/before_training.PNG)
 
-##Result
+
+## Result
 
 After training, The accuracy increased up to 99.83% with losses of 0.41%
 
-![after_training]()
+![after_training](images/after_training.PNG)
